@@ -1,0 +1,36 @@
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+books:
+  pdf:
+    - name: Angular 2
+      source: Angular2.pdf
+      start: 15
+      stop: 121
+
+    - name: Java Design Patterns
+      source: JavaDesignPatterns.pdf
+      start: 1
+      stop: 5
+
+    - name: Microservices Best Practices
+      source: Microservices.pdf
+      start: 1
+      stop: 8
+
+    - name: Spring Boot In Action
+      source: SpringBootInAction.pdf
+      start: 1
+      stop: 7
